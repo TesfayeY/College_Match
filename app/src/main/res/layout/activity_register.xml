@@ -89,8 +89,8 @@
 
     <EditText
         android:id="@+id/inputEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="36dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/baseline_email_24"
