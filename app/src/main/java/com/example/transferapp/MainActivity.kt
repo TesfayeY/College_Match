@@ -20,17 +20,17 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main) // Ensure this is the correct layout file
+        setContentView(R.layout.activity_main)
 
         appPreferences = AppPreferences(this)
 
-        if (appPreferences.isFirstTimeLaunch()) {
-            appPreferences.setFirstTimeLaunch(false)
+        if (!appPreferences.areQuestionsShown()) {
+            appPreferences.setQuestionsShown(true)
             val intent = Intent(this, QuestionsActivity::class.java)
             startActivity(intent)
         }
 
-        drawerLayout = findViewById(R.id.drawer_layout) // Ensure this ID exists in activity_main.xml
+        drawerLayout = findViewById(R.id.drawer_layout)
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
