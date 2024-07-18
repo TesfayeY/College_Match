@@ -28,7 +28,7 @@
 
     <EditText
         android:id="@+id/inputEmail"
-        android:layout_width="0dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:minHeight="48dp"
@@ -48,7 +48,7 @@
 
     <EditText
         android:id="@+id/inputPassword"
-        android:layout_width="0dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"

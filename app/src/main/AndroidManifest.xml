@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TransferApp"
         tools:targetApi="31">
+        <activity android:name=".QuestionsActivity" />
+
         <activity
             android:name=".Home_Page"
             android:exported="false" />

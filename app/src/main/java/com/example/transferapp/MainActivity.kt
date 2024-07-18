@@ -1,5 +1,6 @@
 package com.example.transferapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -15,10 +16,19 @@ import com.google.android.material.navigation.NavigationView
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     lateinit var drawerLayout: DrawerLayout
+    private lateinit var appPreferences: AppPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main) // Ensure this is the correct layout file
+
+        appPreferences = AppPreferences(this)
+
+        if (appPreferences.isFirstTimeLaunch()) {
+            appPreferences.setFirstTimeLaunch(false)
+            val intent = Intent(this, QuestionsActivity::class.java)
+            startActivity(intent)
+        }
 
         drawerLayout = findViewById(R.id.drawer_layout) // Ensure this ID exists in activity_main.xml
 

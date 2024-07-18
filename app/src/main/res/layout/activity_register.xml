@@ -5,19 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bkg"
-    android:paddingBottom="10dp"
+    android:padding="10dp"
     tools:context=".RegisterActivity">
 
     <TextView
         android:id="@+id/Login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/input_bg"
-        android:paddingLeft="20dp"
-        android:paddingTop="0dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        android:text="Register"
+
+        android:padding="10dp"
+        android:text="Sign Up"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textFontWeight="@integer/material_motion_duration_medium_1"
@@ -34,98 +31,91 @@
     <EditText
         android:id="@+id/inputUsername"
         android:layout_width="217dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="32dp"
+        android:layout_height="48dp"
         android:layout_marginTop="36dp"
+
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/baseline_account_box_24"
         android:ems="10"
         android:hint="Username"
         android:inputType="textEmailAddress"
-        android:paddingLeft="20dp"
-        android:paddingTop="0dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/Login"
-        app:layout_constraintHorizontal_bias="0.528"
-        app:layout_constraintStart_toStartOf="@+id/Login"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Login" />
 
     <EditText
         android:id="@+id/inputPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="217dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@android:drawable/ic_secure"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:paddingLeft="20dp"
-        android:paddingTop="0dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/inputEmail"
-        app:layout_constraintStart_toStartOf="@+id/inputEmail"
-        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputUsername" />
 
     <EditText
         android:id="@+id/inputRepeatPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="217dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@android:drawable/ic_secure"
         android:ems="10"
         android:hint="Repeat Password"
         android:inputType="textPassword"
-        android:paddingLeft="20dp"
-        android:paddingTop="0dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/inputPassword"
-        app:layout_constraintStart_toStartOf="@+id/inputPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
 
     <EditText
         android:id="@+id/inputEmail"
-        android:layout_width="220dp"
-        android:layout_height="36dp"
+        android:layout_width="217dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/baseline_email_24"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:paddingLeft="20dp"
-        android:paddingTop="0dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/inputUsername"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/inputUsername"
-        app:layout_constraintTop_toBottomOf="@+id/inputUsername" />
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputRepeatPassword" />
 
     <Button
         android:id="@+id/RegisterButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:padding="10dp"
         android:text="Register"
         android:textColor="@color/black"
         android:textColorHighlight="@color/white"
-        app:layout_constraintEnd_toEndOf="@+id/inputRepeatPassword"
-        app:layout_constraintStart_toStartOf="@+id/inputRepeatPassword"
-        app:layout_constraintTop_toBottomOf="@+id/inputRepeatPassword" />
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
 
     <TextView
         android:id="@+id/AlreadyHaveAnAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already have an account"
+
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/RegisterButton"
-        app:layout_constraintHorizontal_bias="0.461"
-        app:layout_constraintStart_toStartOf="@+id/RegisterButton"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterButton" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterButton"
+        app:layout_constraintVertical_bias="0.418" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
