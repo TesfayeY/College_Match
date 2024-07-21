@@ -60,3 +60,14 @@
   - **Settings**
   - **About**
 
+#### Project structure
+- *├── MainActivity.kt*
+- *├── NetworkThread.kt*
+- *├── CollegeAdapter.kt*
+- *├── HomeFragment.kt*
+- *├── QuestionsActivity.kt*
+- *├── AppPreferences.kt*
+- *└── models*
+ - *   └── Models.kt*
+
+
